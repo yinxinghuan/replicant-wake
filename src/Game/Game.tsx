@@ -53,7 +53,7 @@ const CLIPS: Clip[] = [
     affordance: 'ripple', affordanceX: 50, affordanceY: 50 },
 ];
 
-const CLIMAX_VIDEO = 'clip_06_climax.mp4';
+const CLIMAX_VIDEO = 'clip_06_climax_wake.mp4';
 const CLIMAX_END_FRAME = 'end_06_climax_wake.png';
 const CLIMAX_SUBTITLE = 'Wake her.';
 
@@ -245,10 +245,10 @@ export default function Game() {
           <>
             <div className="lc-title">
               <div className="lc-title__overline">
-                <span>her first night of being a person</span>
+                <span>// her first night of being a person</span>
               </div>
-              <div className="lc-title__main">Replicant Wake</div>
-              <div className="lc-title__sub">type C-7 &nbsp;·&nbsp; 2089 &nbsp;·&nbsp; activation 00:00</div>
+              <div className="lc-title__main">REPLICANT_WAKE</div>
+              <div className="lc-title__sub">[&nbsp; TYPE C-7 &nbsp;//&nbsp; 2089 &nbsp;//&nbsp; ACTIVATION 00:00 &nbsp;]</div>
             </div>
             <div className="lc-firsthint">{t('hint.firstTap')}</div>
           </>
