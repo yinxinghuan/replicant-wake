@@ -78,36 +78,52 @@
     z-index: 3;
   }
 
+  // ─── Top veil — dark gradient so the title reads over bright hero highlights ───
+  &-topveil {
+    position: absolute;
+    top: 0;
+    left: 0; right: 0;
+    height: 40%;
+    background: linear-gradient(to bottom,
+      rgba(6, 8, 21, 0.78) 0%,
+      rgba(6, 8, 21, 0.55) 38%,
+      rgba(6, 8, 21, 0.18) 72%,
+      rgba(6, 8, 21, 0) 100%);
+    z-index: 5;
+    pointer-events: none;
+    animation: lc-title-in 1.2s ease-out backwards;
+  }
+
   // ─── Title — cyberpunk HUD readout ───
   &-title {
     position: absolute;
-    top: 6%;
+    top: 7%;
     left: 0; right: 0;
     text-align: center;
     color: @ink;
     z-index: 6;
     pointer-events: none;
     animation: lc-title-in 1.2s ease-out 0.3s backwards;
-    text-shadow: 0 0 18px rgba(255, 51, 153, 0.8), 0 0 28px rgba(0, 212, 255, 0.5), 0 2px 12px rgba(0, 0, 0, 0.9);
     font-family: 'SF Mono', 'JetBrains Mono', 'Menlo', monospace;
 
     &__overline {
       font-size: 11px;
-      color: @red;
+      color: #ff9dcb;
       letter-spacing: 0.18em;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-weight: 500;
     }
 
     &__main {
       font-family: 'SF Mono', 'JetBrains Mono', 'Menlo', monospace;
-      font-weight: 800;
+      font-weight: 700;
       font-style: normal;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 1.0;
-      letter-spacing: 0.1em;
-      margin: 2px 0 12px;
+      letter-spacing: 0.12em;
+      margin: 2px 0 15px;
       color: @ink;
+      text-shadow: none;
     }
 
     &__sub {
@@ -115,8 +131,8 @@
       font-style: normal;
       font-weight: 500;
       font-size: 10px;
-      letter-spacing: 0.14em;
-      color: @ember;
+      letter-spacing: 0.16em;
+      color: #a8ecff;
     }
   }
 
