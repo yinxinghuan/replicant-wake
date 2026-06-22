@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/replicant-wake/',
+  base: './',
   plugins: [react()],
   server: {
     host: '0.0.0.0',
